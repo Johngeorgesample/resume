@@ -1,2 +1,2 @@
 [build]
-command = "bash build.sh main.tex"
+command = "bash build.sh resume.tex"
