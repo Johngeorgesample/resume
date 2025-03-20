@@ -1,174 +1,89 @@
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
-
 \documentclass{resume} % Use the custom resume.cls style
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 \usepackage[colorlinks=true,linkcolor=black,anchorcolor=black,citecolor=black,filecolor=black,menucolor=black,runcolor=black,urlcolor=black]{hyperref}
+
 \name{John-George Sample} % Your name
-% \address{Pittsburgh, PA} % Your address
-% \address{(814)~$\cdot$~664~$\cdot$~0453 \\ johngeorgesample@gmail.com} % Your phone number and email
-\address{(814)664-0453 \\ johngeorgesample@gmail.com \\ JohnGeorgeSample.com} % Your phone number and email
+\address{(814) 664-0453 \ \textbar \ johngeorgesample@gmail.com \ \textbar \ JohnGeorgeSample.com \textbar \ Pittsburgh, PA}
 
 \begin{document}
 
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-
+%===============================
+% Experience
+%===============================
 \begin{rSection}{Experience}
-\begin{rCompany}{Niche}{React, Redux, TypeScript, Less}{}{}
-\begin{rPromotion}{}{}{Senior Front-end Engineer}{Jan. 2023 – Present}
-\item Launched Niche’s first LLM feature using OpenAI, converting data tables into natural-language summaries, later presented to the board to showcase the potential of generative AI
-\item Championed process improvements that resulted in a 37\% increase in story points delivered per sprint
-% \item Guiding technical direction as Tech Lead on a product team, collaborating with cross-functional stakeholders including product managers, designers, and engineers to assess technical feasibility, breaking epics into user stories, and advocating for resolving tech debt
-\item Led technical direction as Tech Lead, partnering with product managers, designers, and engineers to break down epics, assess feasibility, and prioritize tech debt
-% \item Mentoring junior engineers, providing guidance on best practices, design principles, and problem-solving techniques, contributing to their professional development and enhancing team efficiency
-\item Mentored junior engineers through 1:1s, pair programming, and code reviews, setting clear goals and timelines to support their growth and improve team efficiency
-% \item Onboarded new engineers to team and codebase with
-% \item Contributing to back-end Golang microservices
-\end{rPromotion}
 
-%------------------------------------------------
+  \begin{rSubsection}{Grafana Labs}{React, Next.js, TypeScript}{Senior Front-end Engineer}{Apr. 2025 – Present}
+    \item Working on the Adaptive Telemetry team
+  \end{rSubsection}
+  
+  \begin{rSubsection}{Niche}{React, Redux, TypeScript, Less}{Senior Front-end Engineer}{Sept. 2021 – Mar. 2025}
+    \item Launched Niche’s first LLM feature using OpenAI, converting data tables into natural-language summaries, later presented to the board to showcase the potential of generative AI
+    \item Led the development of a new registration flow, achieving a 13\% increase in monthly registrations
 
-\begin{rRole}{}{}{Front-end Engineer}{Sept. 2021 – Jan. 2023}
-% \item Led the development of a new registration flow utilizing SOMETHING. Resulted in a streamlined user experience and increased monthly registrations by 13\%
-\item Spearheaded development of a new registration flow, leading to 13\% increase in monthly registrations
-% \item Unblocked front-end work by giving detailed code review
-% \item Promoted knowledge sharing by delivering technical talks on topics like Tailwind CSS, semantic HTML, and tmux (recordings available at \href{http://jgs.lol/}{\color{blue}{\underline{jgs.lol}}})
-\item Hosted technical talks on Tailwind CSS, semantic HTML, and tmux (recordings available at \href{http://jgs.lol/}{\color{blue}{\underline{jgs.lol}}})
-% \item Organized and led Niche Tech Book Club, a group for reading and discussing technical books
-\end{rRole}
-\end{rCompany}
+    
+    \item Championed process improvements that resulted in a 37\% increase in story points delivered per sprint
+    \item Led technical direction as Tech Lead, partnering with product managers, designers, and engineers to break down epics, assess feasibility, and prioritize tech debt
+    \item Mentored junior engineers through 1:1s, pair programming, and code reviews
+    \item Hosted technical talks on Tailwind CSS, semantic HTML, and tmux (recordings available at \href{http://jgs.lol/}{\color{blue}{\underline{jgs.lol}}})
+  \end{rSubsection}
 
-%------------------------------------------------
-
-% \begin{rSubsection}{Function}{\em Nov.\ 2019 - Sept.\ 2021}{Front-end Engineer}{JavaScript}
-\begin{rSubsection}{fxnction}{Vue.js, Vuex, Nuxt, JavaScript, Sass, Tailwind CSS}{Front-end Engineer}{Nov.\ 2019 – Sept.\ 2021}
-% \item Developed and maintained client websites using Vue.js, Vuex, and Nuxt
-% \item Created front-end component library that adhered to web accessibility standards (WCAG)
-% \item Collaborated with designers to create intuitive and visually appealing user interfaces
-% \item Improved documentation by introducing architecture decision records --- a way to preserve knowledge and aid in onboarding new engineers
-% \item Established acceptance criteria to ensure work was understood and agreed upon by team
-% \item Authored technical blog posts published on company website
-
-\item Led the development of a client’s marketing platform as the sole developer, converting designs into a Vue.js/Nuxt front-end, integrated with Storyblok (headless CMS) for dynamic content management
-\item Partnered with stakeholders to gather requirements, demo progress, and iterate on features
-\item Achieved WCAG 2.1 compliance by conducting accessibility audits, implementing semantic HTML, and testing with screen readers, delivering a fully accessible user experience
- \end{rSubsection}
-
-%------------------------------------------------
-
-% \begin{rSubsection}{Software Engineer Intern}{\em May\ 2018 – Aug.\ 2018}{Bosch \textbar \ Pittsburgh, PA}{React, JavaScript}
-% \item Created component library based on company style guide
-% \end{rSubsection}
-
-%------------------------------------------------
-
-% \begin{rSubsection}{Software Engineer Intern}{\em May\ 2017 – Aug.\ 2017}{TeleTracking Technologies \textbar \ Pittsburgh, PA}{JavaScript, AngularJS}
-% \item Created mobile and desktop chat application using AngularJS and Apache Cordova
-% \end{rSubsection}
-
-%------------------------------------------------
-
-
-%\begin{rSubsection}{Software Engineer Intern}{\em May 2017 – Aug.\ 2017}{Teletracking Technologies %\textbar \ Pittsburgh, PA}{}
-%\item Created messaging application using C\#, AngularJS, Ionic, and Apache Cordova
-%\end{rSubsection}
+  \begin{rSubsection}{fxnction}{Vue.js, Vuex, Nuxt, JavaScript, Sass, Tailwind CSS}{Front-end Engineer}{Nov. 2019 – Sept. 2021}
+    \item Led the development of a client’s marketing platform as the sole developer, converting designs into a Vue.js/Nuxt front-end, integrated with Storyblok (headless CMS) for dynamic content management
+    \item Partnered with stakeholders to gather requirements, demo progress, and iterate on features
+    \item Achieved WCAG 2.1 compliance by conducting accessibility audits, implementing semantic HTML, and testing with screen readers, delivering a fully accessible user experience
+  \end{rSubsection}
 
 \end{rSection}
 
-%----------------------------------------------------------------------------------------
-% PROJECT SECTION
-%----------------------------------------------------------------------------------------
+%===============================
+% Projects
+%===============================
+\begin{rSection}{Projects}
 
- \begin{rSection}
- {projects
- % {\small(available on \href{https://github.com/johngeorgesample}{github.com/johngeorgesample})}
- }
+  \begin{rSubsection}{pgh.coffee \normalfont (React, Next.js, TypeScript, Zustand, Tailwind CSS, Vitest)}{}{}{}
+    \item Interactive map of Pittsburgh's coffee shops with 500+ monthly users
+    \item Designed and implemented RESTful API endpoints serving GeoJSON and standard JSON data
+    \item \href{https://pgh.coffee/}{\color{blue}{\underline{Website}}} \textbar \ \href{https://github.com/Johngeorgesample/pgh-coffee}{\color{blue}{\underline{Source code}}}.
+  \end{rSubsection}
 
-   % \need the blank objs for the dumb .cls
-   \begin{rSubsection}{pgh.coffee {\normalfont (React, Next.js, TypeScript, Zustand, Tailwind CSS)}}{}{}{}
-   \item Interactive map of Pittsburgh's coffee shops with 500+ monthly users
-   \item \href{https://pgh.coffee/}{\color{blue}{\underline{Website}}} \textbar \ \href{https://github.com/Johngeorgesample/pgh-coffee}{\color{blue}{\underline{Source code}}}
-   \end{rSubsection}
-
-  % \begin{rSubsection}{BrewPad {\normalfont (React Native, TypeScript, Firebase, GraphQL)}}{}{}{}
-  % \item Building app to improve making coffee at home
-  % \item \href{http://www.brewpad.app}{BrewPad.app}
-  % \end{rSubsection}
-
-  % \begin{rSubsection}{SpotHue {\normalfont (Python, JavaScript, AppleScript, Bash)}}{}{}{}
-  % \item Built program to match Philips Hue lights to dominant colors of current Spotify song's album art
-  % \end{rSubsection}
-
- % \begin{rSubsection}{Meal time {\normalfont (TypeScript, Go, GraphQL, Tailwind CSS)}}{}{}{}
- % % \item \hyperlink{https://github.com/Johngeorgesample/foo}{https://github.com/Johngeorgesample/foo}
- % \item \hyperlink{}{https://mealtime.com}
- % \item Web app that generates weekly meal plan and grocery list
- % \item Features user accounts,
- % \item 90\% test coverage
- % \end{rSubsection}
-
- % \begin{rSubsection}{Foobar {\normalfont (TypeScript)}}{}{}{}
- % \item \hyperlink{https://github.com/Johngeorgesample/foo}{https://github.com/Johngeorgesample/foo}
- % \item npm package for calculating the amount of time to read an article
- % \end{rSubsection}
-
- % \begin{rSubsection}{Foobar {\normalfont (React, TypeScript, Tailwind)}}{}{}{}
- % \item Chrome extension for creating markdown documents
- % \item Includes optional Vim bindings
- % \end{rSubsection}
 \end{rSection}
 
-
-%----------------------------------------------------------------------------------------
-%Publications
-%----------------------------------------------------------------------------------------
-
+%===============================
+% Publications
+%===============================
 \begin{rSection}{Publications}
-\begin{rSubsection}{\small{Advancing the Cybersecurity of Electronic Voting Machines Using Blockchain Tech.}}{}{Book chapter \textbar \ N. Sukhija, E. Bautista and \textbf{J-G. Sample}}{}
-\item Published in Essentials of Blockchain Technology (ISBN 0367027712)
-\end{rSubsection}
 
-%\begin{rSubsection}{\footnotesize{Employing Blockchain Tech. for Decentralized Crowdsourced Data Access and Management}
-%}{}{Paper \textbar \ N. Sukhija, E. Bautista, M. Moore and \textbf{J-G. Sample}}{}
-%\item Published in 2019 IEEE SmartWorld/SCALCOM/UIC/ATC/CBDCom/IOP/SCI
-%\end{rSubsection}
+  \begin{rSubsection}{\small{Advancing the Cybersecurity of Electronic Voting Machines Using Blockchain Tech.}}{}{Book chapter \textbar \ N. Sukhija, E. Bautista, and \textbf{J-G. Sample}}{}
+    \item Published in Essentials of Blockchain Technology (ISBN 0367027712)
+  \end{rSubsection}
+
+% \begin{rSubsection}{\footnotesize{Employing Blockchain Tech. for Decentralized Crowdsourced Data Access and Management}
+% }{}{Paper \textbar \ N. Sukhija, E. Bautista, M. Moore and \textbf{J-G. Sample}}{}
+% \item Published in 2019 IEEE SmartWorld/SCALCOM/UIC/ATC/CBDCom/IOP/SCI
+% \end{rSubsection} 
+
 \end{rSection}
 
-%----------------------------------------------------------------------------------------
-%	TECHNICAL STRENGTHS SECTION
-%----------------------------------------------------------------------------------------
-
+%===============================
+% Skills
+%===============================
 \begin{rSection}{Skills}
 \begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l }
 Languages & TypeScript, JavaScript, HTML, CSS  \\
 Libraries/Frameworks & React, Redux, Vue.js (Vuex, Nuxt), Tailwind CSS, Sass, Less \\
-Tools &  Bash/Zsh, Git, \LaTeX,  Vim \\
-% this section could work well with matching things from job postings that I don't explicitly call out in a job's bullet points
-% Concepts & Unit testing, REST \\
+Tools & Bash/Zsh, Git, \LaTeX, Vim \\
 \end{tabular}
 \end{rSection}
 
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
+%===============================
+% Education
+%===============================
 \begin{rSection}{Education}
-\begin{rEducation}{Slippery Rock University}{2019}{B.S., Computer Science}{}
-\end{rEducation}
+
+  \begin{rEducation}{Slippery Rock University}{2019}{B.S., Computer Science}{}
+  \end{rEducation}
+
 \end{rSection}
-%----------------------------------------------------------------------------------------
-%	EXAMPLE SECTION
-%----------------------------------------------------------------------------------------
-
-%\begin{rSection}{Section Name}
-
-%Section content\ldots
-
-%\end{rSection}
-
-%----------------------------------------------------------------------------------------
 
 \end{document}
