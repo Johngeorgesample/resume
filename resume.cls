@@ -108,11 +108,12 @@
 %	WORK EXPERIENCE FORMATTING
 %----------------------------------------------------------------------------------------
 
-\newenvironment{rSubsection}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
- {\bf #1} \hfill {\em #2} % Bold company name and date on the right
- \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
+\newenvironment{rSubsection}[5][]{ % 5 input arguments - optional logo, company name, year(s) employed, job title and location
+  % \ifthenelse{\equal{#1}{}}{}{\includegraphics[height=1.2em]{#1}\hspace{0.5em}}{\bf #2} \hfill {\em #3} % Bold company name and date on the right
+ \ifthenelse{\equal{#1}{}}{}{\includegraphics[height=1.8em]{#1}\hspace{0.8em}}{\bf #2} \hfill {\em #3} % Bold company name and date on the right
+ \ifthenelse{\equal{#4}{}}{}{ % If the fourth argument is not specified, don't print the job title and location line
   \\
-  {\em #3} \hfill {\em #4} % Italic job title and location
+  {\em #4} \hfill {\em #5} % Italic job title and location
   }\smallskip
   \begin{list}{$\cdot$}{\leftmargin=1em} % \cdot used for bullets, no indentation
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
