@@ -1,7 +1,8 @@
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry} % Document margins
 \usepackage[colorlinks=true,linkcolor=black,anchorcolor=black,citecolor=black,filecolor=black,menucolor=black,runcolor=black,urlcolor=black]{hyperref}
+\usepackage{graphicx} % Required for including images
 
 \name{John-George Sample} % Your name
 \address{(814) 664-0453 \ \textbar \ johngeorgesample@gmail.com \ \textbar \ JohnGeorgeSample.com \textbar \ Pittsburgh, PA}
@@ -13,11 +14,11 @@
 %===============================
 \begin{rSection}{Experience}
 
-  \begin{rSubsection}{Grafana Labs}{React, TypeScript}{Senior Front-end Engineer}{Apr. 2025 – Present}
+  \begin{rSubsection}[img/grafana-logo.png]{Grafana Labs}{React, TypeScript}{Senior Front-end Engineer}{Apr. 2025 – Present}
     \item Working on the Adaptive Telemetry team
   \end{rSubsection}
   
-  \begin{rSubsection}{Niche.com}{React, Redux, TypeScript, Less}{Senior Front-end Engineer}{Sept. 2021 – Mar. 2025}
+  \begin{rSubsection}[img/niche.png]{Niche.com}{React, Redux, TypeScript, Less}{Senior Front-end Engineer}{Sept. 2021 – Mar. 2025}
     \item Launched Niche’s first LLM feature using OpenAI to convert data tables into natural-language summaries, later demoed to the board to highlight generative AI potential
     \item Led the development of a new registration flow, achieving a 13\% increase in monthly registrations
     \item Improved sprint efficiency by 37\% by introducing a pragmatic QA approach, reducing reliance on manual testing through stronger unit and automated test coverage
@@ -26,7 +27,7 @@
     \item Hosted technical talks on Tailwind CSS, semantic HTML, and tmux (recordings available at \href{http://jgs.lol/}{\color{blue}{\underline{jgs.lol}}})
   \end{rSubsection}
 
-  \begin{rSubsection}{Promantus Inc.}{Vue.js, Vuex, Nuxt, JavaScript, Sass, Tailwind CSS}{Front-end Engineer}{Nov. 2019 – Sept. 2021}
+  \begin{rSubsection}[img/promantus-logo.png]{Promantus Inc.}{Vue.js, Vuex, Nuxt, JavaScript, Sass, Tailwind CSS}{Front-end Engineer}{Nov. 2019 – Sept. 2021}
     \item Led the development of a client’s marketing platform as the sole developer, converting designs into a Vue.js/Nuxt front-end, integrated with Storyblok (headless CMS) for dynamic content management
     \item Achieved WCAG 2.1 compliance by conducting accessibility audits, implementing semantic HTML, and testing with screen readers, delivering a fully accessible user experience
   \end{rSubsection}

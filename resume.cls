@@ -97,7 +97,7 @@
   \sectionlineskip
   \hrule % Horizontal line
   \begin{list}{}{ % List for each individual item in the section
-    \setlength{\leftmargin}{1.5em} % Margin within the section
+    \setlength{\leftmargin}{1.2em} % Margin within the section
   }
   \item[]
 }{
@@ -108,17 +108,24 @@
 %	WORK EXPERIENCE FORMATTING
 %----------------------------------------------------------------------------------------
 
-\newenvironment{rSubsection}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
- {\bf #1} \hfill {\em #2} % Bold company name and date on the right
- \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
-  \\
-  {\em #3} \hfill {\em #4} % Italic job title and location
-  }\smallskip
-  \begin{list}{$\cdot$}{\leftmargin=1em} % \cdot used for bullets, no indentation
-   \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
-  }{
-  \end{list}
-  \vspace{0.5em} % Some space after the list of bullet points
+\newenvironment{rSubsection}[5][]{ % 5 input arguments - optional logo, company name, year(s) employed, job title and location
+ \noindent
+ % Create two minipages side by side - logo on left, content on right
+ \begin{minipage}[t]{1.8em}
+   \ifthenelse{\equal{#1}{}}{}{\raisebox{-0.2em}{\includegraphics[height=1.8em]{#1}}}
+ \end{minipage}\hspace{0.2em}%
+ \begin{minipage}[t]{\dimexpr\linewidth-1.6em\relax}
+   {\bf #2} \hfill {\em #3} % Bold company name and date on the right
+   \ifthenelse{\equal{#4}{}}{}{ % If the fourth argument is not specified, don't print the job title and location line
+    \\
+    {\em #4} \hfill {\em #5} % Italic job title and location
+   }\smallskip
+   \begin{list}{$\cdot$}{\leftmargin=1.2em} % \cdot used for bullets, no indentation
+    \itemsep 0em \vspace{-0.1em} % Compress items in list together for aesthetics
+   }{
+   \end{list}
+ \end{minipage}%
+ \vspace{0.6em} % Some space after the list of bullet points
 }
 
 %----------------------------------------------------------------------------------------
@@ -177,7 +184,7 @@
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
 \def\namesize{\huge} % Size of the name at the top of the document
-\def\addressskip{\smallskip} % The space between the two address (or phone/email) lines
+\def\addressskip{\medskip} % The space between the two address (or phone/email) lines
 \def\sectionlineskip{\medskip} % The space above the horizontal line for each section
 \def\nameskip{\bigskip} % The space after your name at the top
 \def\sectionskip{\medskip} % The space after the heading section
