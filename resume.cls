@@ -96,6 +96,7 @@
   \MakeUppercase{\textbf{#1}} % Section title
   \sectionlineskip
   \hrule % Horizontal line
+ \vspace{0.5em} 
   \begin{list}{}{ % List for each individual item in the section
     \setlength{\leftmargin}{1.5em} % Margin within the section
   }
@@ -104,6 +105,20 @@
   \end{list}
 }
 
+% New minimalist Education environment
+\newenvironment{rEducationSection}[1]{ % 1 input argument - section name
+  \sectionskip
+  \MakeUppercase{\textbf{#1}} % Section title
+  \sectionlineskip
+  \hrule % Horizontal line
+  \vspace{0.5em}
+  \begin{list}{}{%
+    \setlength{\leftmargin}{1.5em} % align with section header
+  }
+  \item[]
+}{
+  \end{list}
+}
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE FORMATTING
 %----------------------------------------------------------------------------------------
@@ -115,7 +130,7 @@
   {\em #3} \hfill {\em #4} % Italic job title and location
   }\smallskip
   \begin{list}{$\cdot$}{\leftmargin=1em} % \cdot used for bullets, no indentation
-   \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+   \itemsep -0.25em \vspace{-0.25em} % Compress items in list together for aesthetics
   }{
   \end{list}
   \vspace{0.5em} % Some space after the list of bullet points
@@ -180,4 +195,4 @@
 \def\addressskip{\smallskip} % The space between the two address (or phone/email) lines
 \def\sectionlineskip{\medskip} % The space above the horizontal line for each section
 \def\nameskip{\bigskip} % The space after your name at the top
-\def\sectionskip{\medskip} % The space after the heading section
+\def\sectionskip{\bigskip} % The space after the heading section
