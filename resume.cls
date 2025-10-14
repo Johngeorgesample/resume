@@ -45,11 +45,12 @@
   \@ifundefined{@addresstwo}{
     \def \@addresstwo {#1}
   }{
-  \@ifundefined{@addressthree}{
-  \def \@addressthree {#1}
-  }{
-     \def \@addressone {#1}
-  }}
+    \@ifundefined{@addressthree}{
+      \def \@addressthree {#1}
+    }{
+      \def \@addressone {#1}
+    }
+  }
 }
 
 % \printaddress is used to style an address line (given as input)
@@ -82,7 +83,7 @@
     \printaddress{\@addressone}}
   \@ifundefined{@addresstwo}{}{ % Print the second address if specified
     \printaddress{\@addresstwo}}
-     \@ifundefined{@addressthree}{}{ % Print the third address if specified
+  \@ifundefined{@addressthree}{}{ % Print the third address if specified
     \printaddress{\@addressthree}}
 }
 
@@ -96,7 +97,7 @@
   \MakeUppercase{\textbf{#1}} % Section title
   \sectionlineskip
   \hrule % Horizontal line
- \vspace{0.5em} 
+  \vspace{0.5em}
   \begin{list}{}{ % List for each individual item in the section
     \setlength{\leftmargin}{1.5em} % Margin within the section
   }
@@ -119,76 +120,79 @@
 }{
   \end{list}
 }
+
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE FORMATTING
 %----------------------------------------------------------------------------------------
 
 \newenvironment{rSubsection}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
- {\bf #1} \hfill {\em #2} % Bold company name and date on the right
- \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
-  \\
-  {\em #3} \hfill {\em #4} % Italic job title and location
+  {\bf #1} \hfill {\em #2} % Bold company name and date on the right
+  \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
+    \\
+    {\em #3} \hfill {\em #4} % Italic job title and location
   }\smallskip
   \begin{list}{$\cdot$}{\leftmargin=1em} % \cdot used for bullets, no indentation
-   \itemsep -0.25em \vspace{-0.25em} % Compress items in list together for aesthetics
-  }{
+    \itemsep -0.25em \vspace{-0.25em} % Compress items in list together for aesthetics
+}{
   \end{list}
   \vspace{0.5em} % Some space after the list of bullet points
 }
 
 %----------------------------------------------------------------------------------------
-%	JG hacking
+%	JG HACKING
 %----------------------------------------------------------------------------------------
 
 \newenvironment{rCompany}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
- {\bf #1} \hfill {\em #2} % Bold company name and date on the right
- \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
-  \\
-  {\em #3} \hfill {\em #4} % Italic job title and location
+  {\bf #1} \hfill {\em #2} % Bold company name and date on the right
+  \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
+    \\
+    {\em #3} \hfill {\em #4} % Italic job title and location
   }\vspace{-1.0em}
   \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
-   \itemsep -0.5em \vspace{-0.8em} % Space between company and most recent role
-  }{
+    \itemsep -0.5em \vspace{-0.8em} % Space between company and most recent role
+}{
   \end{list}
   \vspace{0.5em} % Some space after the list of bullet points
 }
 
-
 \newenvironment{rPromotion}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
- {\bf #1} \hfill {#2} % Bold company name and date on the right
- \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
-  \\
-  {\em #3} \hfill {\em #4} % Italic job title and location
+  {\bf #1} \hfill {#2} % Bold company name and date on the right
+  \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
+    \\
+    {\em #3} \hfill {\em #4} % Italic job title and location
   }\smallskip
   \begin{list}{$\cdot$}{\leftmargin=1em} % \cdot used for bullets, no indentation
-   \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
-  }{
+    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+}{
   \end{list}
   \vspace{-0.5em} % Some space after the list of bullet points
 }
 
-
 \newenvironment{rRole}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
- {\bf #1} \hfill {#2} % Bold company name and date on the right
- \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
-  \\
-  {\em #3} \hfill {\em #4} % Italic job title and location
+  {\bf #1} \hfill {#2} % Bold company name and date on the right
+  \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
+    \\
+    {\em #3} \hfill {\em #4} % Italic job title and location
   }\smallskip
   \begin{list}{$\cdot$}{\leftmargin=1em} % \cdot used for bullets, no indentation
-   \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
-  }{
+    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+}{
   \end{list}
   \vspace{0.5em} % Some space after the list of bullet points
 }
 
 \newenvironment{rEducation}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
- {\bf #1} \hfill {\em #2} % Bold company name and date on the right
- \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
-  \\
-  {\em #3} \hfill {\em #4} % Italic job title and location
+  {\bf #1} \hfill {\em #2} % Bold company name and date on the right
+  \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
+    \\
+    {\em #3} \hfill {\em #4} % Italic job title and location
   }\smallskip
   \vspace{0.5em} % Some space after the list of bullet points
 }
+
+%----------------------------------------------------------------------------------------
+%	WHITESPACE DEFINITIONS
+%----------------------------------------------------------------------------------------
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
 \def\namesize{\huge} % Size of the name at the top of the document
