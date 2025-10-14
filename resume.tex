@@ -1,9 +1,17 @@
 \documentclass{resume} % Use the custom resume.cls style
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+\usepackage[
+  colorlinks=true,
+  linkcolor=black,
+  anchorcolor=black,
+  citecolor=black,
+  filecolor=black,
+  menucolor=black,
+  runcolor=black,
+  urlcolor=black
+]{hyperref}
 
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
-\usepackage[colorlinks=true,linkcolor=black,anchorcolor=black,citecolor=black,filecolor=black,menucolor=black,runcolor=black,urlcolor=black]{hyperref}
-
-\name{John-George Sample} % Your name
+\name{John-George Sample}
 \address{(814) 664-0453 \ \textbar \ johngeorgesample@gmail.com \ \textbar \ JohnGeorgeSample.com \textbar \ Pittsburgh, PA}
 
 \begin{document}
@@ -18,19 +26,16 @@
     \item Semifinalist in the 2025 Q4 company hackathon: built the front-end for an on-premises tail-sampling prototype using fleet-managed Alloy collectors
     \item Established front-end team working agreement, improving collaboration and addressing friction in a distributed environment
   \end{rSubsection}
-  
-  \begin{rSubsection}{Niche.com}{Sept. 2021 – Mar. 2025}{Senior Front-end Engineer}{}
-    \item Launched Niche’s first LLM feature using OpenAI to convert data tables into natural-language summaries, later demoed to the board to highlight generative AI potential 
-    \item Led the development of a new registration flow, achieving a 13\% increase in monthly registrations
 
-    
-    % \item Improved sprint efficiency by 37\% by introducing a pragmatic QA approach, reducing reliance on manual testing through stronger unit and automated test coverage 
-    \item Served as Tech Lead, breaking down epics, prioritizing tech debt, and mentoring engineers through 1:1s, pair programming, and code reviews. 
+  \begin{rSubsection}{Niche.com}{Sept. 2021 – Mar. 2025}{Senior Front-end Engineer}{}
+    \item Launched Niche's first LLM feature using OpenAI to convert data tables into natural-language summaries, later demoed to the board to highlight generative AI potential
+    \item Led the development of a new registration flow, achieving a 13\% increase in monthly registrations
+    \item Served as Tech Lead, breaking down epics, prioritizing tech debt, and mentoring engineers through 1:1s, pair programming, and code reviews
     \item Hosted technical talks on Tailwind CSS, semantic HTML, and tmux (recordings available at \href{http://jgs.lol/}{\color{blue}{\underline{jgs.lol}}})
   \end{rSubsection}
 
   \begin{rSubsection}{Promantus Inc.}{Nov. 2019 – Sept. 2021}{Front-end Engineer}{}
-    \item Sole developer for a client’s marketing platform, delivering a Vue.js/Nuxt application integrated with Storyblok (headless CMS) for dynamic content management
+    \item Sole developer for a client's marketing platform, delivering a Vue.js/Nuxt application integrated with Storyblok (headless CMS) for dynamic content management
     \item Achieved WCAG 2.1 compliance by conducting accessibility audits, implementing semantic HTML, and testing with screen readers, delivering a fully accessible user experience
   \end{rSubsection}
 
@@ -42,23 +47,20 @@
 \begin{rSection}{Projects}
 
   \begin{rSubsection}{pgh.coffee \normalfont (React, Next.js, TypeScript, Zustand, Tailwind CSS, Vitest)}{}{}{}
-    \item Interactive map of Pittsburgh's coffee shops with 200+ monthly users
-     (\href{https://pgh.coffee/}{\color{blue}{\underline{Website}}} \textbar \ \href{https://github.com/Johngeorgesample/pgh-coffee}{\color{blue}{\underline{Source code}}})
-    
-    \item Featured in a full \href{https://technical.ly/software-development/pittsburgh-coffee-shops-interactive-map-open-source/}{\color{blue}{\underline{Technical.ly article}}} highlighting pgh.coffee’s creation and community impact
-    \item Later recognized by Technical.ly as one of Pittsburgh’s \href{https://technical.ly/workforce/reallist-innovators-2025-meet-15-people-in-pittsburgh-pushing-science-and-tech-forward/}{\color{blue}{\underline{2025 RealLIST Innovators }}}for creating pgh.coffee
+    \item Interactive map of Pittsburgh's coffee shops with 200+ monthly users (\href{https://pgh.coffee/}{\color{blue}{\underline{Website}}} \textbar \ \href{https://github.com/Johngeorgesample/pgh-coffee}{\color{blue}{\underline{Source code}}})
+    \item Featured in a full \href{https://technical.ly/software-development/pittsburgh-coffee-shops-interactive-map-open-source/}{\color{blue}{\underline{Technical.ly article}}} highlighting pgh.coffee's creation and community impact
+    \item Later recognized by Technical.ly as one of Pittsburgh's \href{https://technical.ly/workforce/reallist-innovators-2025-meet-15-people-in-pittsburgh-pushing-science-and-tech-forward/}{\color{blue}{\underline{2025 RealLIST Innovators}}} for creating pgh.coffee
   \end{rSubsection}
-  
 
 \end{rSection}
-
 
 %===============================
 % Skills
 %===============================
- \begin{rSection}{Skills}
- TypeScript, JavaScript, React (Next.js), Redux, Zustand, Tailwind CSS
- \end{rSection}
+\begin{rSection}{Skills}
+  TypeScript, JavaScript, React (Next.js), Redux, Zustand, Tailwind CSS
+\end{rSection}
+
 %===============================
 % Education
 %===============================
