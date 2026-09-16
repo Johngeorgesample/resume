@@ -1,5 +1,5 @@
 \documentclass{resume} % Use the custom resume.cls style
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+\usepackage[left=0.75in,top=0.5in,right=0.75in,bottom=0.5in]{geometry}
 \usepackage[
   colorlinks=true,
   linkcolor=black,
@@ -22,16 +22,16 @@
 \begin{rSection}{Experience}
 
   \begin{rSubsection}{Grafana Labs}{Apr. 2025 – Present}{Senior Front-end Engineer}{}
-    \item Took Adaptive Profiles from concept to private preview in 5 months as the sole front-end engineer — dynamic sampling that holds continuous profiling at a 10\% cost baseline, boosting to full resolution when workloads change
-    \item Designed and shipped the Adaptive Logs onboarding flow: 208 users wrote their first log-drop rule through it, cutting 198 TB of log ingest (\$78K saved), and 33 came back to write 111 more on their own
-    \item Built Adaptive Telemetry's first feature-adoption dashboard, now the model for feature-success tracking across the group, with two sibling pods shipping their own unprompted
+    \item Designed and shipped the Adaptive Logs onboarding flow: 208 users wrote their first log-drop rule through it, cutting 198 TB of customer log ingest and \$78K in customer spend over three months; 33 returned on their own to write 111 more
+    \item Took Adaptive Profiles from concept to general availability in 5 months as the sole front-end engineer
+    \item Set the model for feature-success tracking across Adaptive Telemetry by building its first feature-adoption dashboard; two sibling pods shipped their own on the strength of it
   \end{rSubsection}
 
-  \begin{rSubsection}{Niche.com}{Sept. 2021 – Mar. 2025}{Senior Front-end Engineer}{}
-    \item Launched Niche's first LLM feature using OpenAI to convert data tables into natural-language summaries, later selected to demo generative AI potential to the board
+  \begin{rSubsection}{Niche.com}{Sept. 2021 – Mar. 2025}{Senior Front-end Engineer, Tech Lead}{}
+    \item Launched Niche's first LLM feature, using OpenAI to turn data tables into natural-language summaries
     \item Led the development of a new registration flow, achieving a 13\% increase in monthly registrations
-    \item Served as Tech Lead, breaking down epics, prioritizing tech debt, and mentoring engineers through 1:1s, pair programming, and code reviews
-    \item Hosted technical talks on Tailwind CSS, semantic HTML, and tmux (recordings available at \href{http://jgs.lol/}{\color{blue}{\underline{jgs.lol}}})
+    \item Broke down epics, prioritized tech debt, and mentored engineers through 1:1s, pair programming, and code reviews
+    \item Hosted technical talks on Tailwind CSS, semantic HTML, and tmux (\href{http://jgs.lol/}{\color{blue}{\underline{talk recordings}}})
   \end{rSubsection}
 
   \begin{rSubsection}{Promantus Inc.}{Nov. 2019 – Sept. 2021}{Front-end Engineer}{}
@@ -45,9 +45,9 @@
 %===============================
 \begin{rSection}{Projects}
 
-  \begin{rSubsection}{pgh.coffee \normalfont (React, Next.js, TypeScript, Zustand, Tailwind CSS, Vitest)}{}{}{}
-    \item Coffee shop discovery platform for Pittsburgh, PA (\href{https://pgh.coffee/}{\color{blue}{\underline{Website}}} \textbar \ \href{https://github.com/Johngeorgesample/pgh-coffee}{\color{blue}{\underline{Source code}}})
-    \item Designed the database schema and REST APIs modeling shop-company-roaster relationships, multi-location support, and event curation
+  \begin{rSubsection}{pgh.coffee \normalfont (TypeScript, Next.js, React, Supabase/Postgres, Zustand, Tailwind CSS, Vitest)}{}{}{}
+    \item Coffee shop discovery platform for Pittsburgh, built and maintained solo since 2023: 140+ shops and 2.8K unique visitors year to date, up 94\% (\href{https://pgh.coffee/}{\color{blue}{\underline{Website}}} \textbar \ \href{https://github.com/Johngeorgesample/pgh-coffee}{\color{blue}{\underline{Source code}}})
+    \item Designed the Postgres schema and REST API behind shop-company-roaster relationships, multi-location support, event curation, saved shops, and an owner claim flow
     \item \href{https://technical.ly/software-development/pittsburgh-coffee-shops-interactive-map-open-source/}{\color{blue}{\underline{Featured by Technical.ly}}} for pgh.coffee's growth and named a \href{https://technical.ly/workforce/reallist-innovators-2025-meet-15-people-in-pittsburgh-pushing-science-and-tech-forward/}{\color{blue}{\underline{2025 RealLIST Innovator}}}
   \end{rSubsection}
 
@@ -57,14 +57,19 @@
 % Open Source
 %===============================
 \begin{rSection}{Open Source}
-  19 merged pull requests across 11 repositories, including \href{https://github.com/grafana/grafana/commits?author=johngeorgesample}{\color{blue}{\underline{grafana/grafana}}} (accessibility and component APIs in grafana-ui, the design system behind Grafana), \href{https://github.com/mdn/content/commits?author=johngeorgesample}{\color{blue}{\underline{MDN Web Docs}}}, \href{https://github.com/plausible/docs/pull/625}{\color{blue}{\underline{Plausible}}}, and \href{https://github.com/visgl/react-map-gl/pull/2425}{\color{blue}{\underline{react-map-gl}}}
+  Merged contributions to \href{https://github.com/grafana/grafana/commits?author=johngeorgesample}{\color{blue}{\underline{grafana/grafana}}} (accessibility and component APIs in grafana-ui, the design system behind Grafana), \href{https://github.com/mdn/content/commits?author=johngeorgesample}{\color{blue}{\underline{MDN Web Docs}}}, \href{https://github.com/plausible/docs/pull/625}{\color{blue}{\underline{Plausible}}}, and \href{https://github.com/visgl/react-map-gl/pull/2425}{\color{blue}{\underline{react-map-gl}}}
 \end{rSection}
 
 %===============================
 % Skills
 %===============================
 \begin{rSection}{Skills}
-  TypeScript, JavaScript, React (Next.js), Redux, Zustand, Tailwind CSS
+  \begin{tabular}{@{} >{\bfseries}l @{\hspace{4ex}} l }
+    Languages & TypeScript, JavaScript, SQL, HTML, CSS \\
+    Front-end & React (Next.js), Vue (Nuxt), Redux, Zustand, Tailwind CSS \\
+    Back-end \& Data & Node.js, PostgreSQL (Supabase), REST API design \\
+    Practices & Testing (Vitest, Testing Library), web accessibility, observability, product analytics \\
+  \end{tabular}
 \end{rSection}
 
 %===============================
